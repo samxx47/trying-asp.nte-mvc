@@ -1,0 +1,43 @@
+﻿
+@{
+    ViewBag.Title = "Plant";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<style>
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+</style>
+
+<body>
+    <h2>Plant</h2>
+    <p>Please select the department from dropdown</p>
+
+    <div class="dropdown">
+        <span><b>Departments</b></span>
+        <div class="dropdown-content">
+            <p><a>Department  -A<br /></a></p>
+            <p><a>Department  -B<br /></a></p>
+            <p><a>Department  -C</a></p>
+        </div>
+    </div>
+
+</body>
